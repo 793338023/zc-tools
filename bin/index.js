@@ -25,4 +25,11 @@ program
     update();
   });
 
+program
+  .command("test")
+  .description("测试指令")
+  .action((name, options, command) => {
+    console.log("测试成功！！！");
+  });
+
 program.parse(process.argv);
